@@ -16,7 +16,7 @@ res/logo/%.pdf: res/logo/%.svg
 		--export-filename=$@ \
 		$<
 
-${PREf}.pdf: ${PREF}.tex \
+${PREF}.pdf: ${PREF}.tex \
 		res/cc/by-nc-nd-88x31.pdf \
 		res/logo/BibliaShare.pdf
 	pdflatex ${PREF}.tex
