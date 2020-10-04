@@ -3,7 +3,7 @@
 
 %-----------------------------------------------------------------------------------------------
 % BShare logo Palette
-\definecolor{BSdbg}{rgb}{0.122,0.063,0.000} % Dark-Brown background
+\definecolor{BSdbg}{rgb}{0.111,0.047,0.000} % Dark-Brown background
 \definecolor{BSlbg}{rgb}{0.675,0.616,0.576} % LightBrown background
 \definecolor{BScbg}{rgb}{0.424,0.365,0.325} % BrownCross background
 \definecolor{BSpbg}{rgb}{0.757,0.725,0.667} % Green-Page background
@@ -18,12 +18,12 @@
 \definecolor{BSmag}{rgb}{0.111,0.000,0.111} % mag hue  --- 300°
 
 % Text Highlight Colors
-\definecolor{TXred}{rgb}{0.750,0.000,0.000} % red txt  --- 000°
-\definecolor{TXyel}{rgb}{0.750,0.750,0.000} % yel txt  --- 060°
-\definecolor{TXgre}{rgb}{0.000,0.750,0.000} % gre txt  --- 120°
-\definecolor{TXcya}{rgb}{0.000,0.750,0.750} % cya txt  --- 180°
-\definecolor{TXblu}{rgb}{0.200,0.200,0.750} % blu txt  --- 240°
-\definecolor{TXmag}{rgb}{0.750,0.000,0.750} % mag txt  --- 300°
+\definecolor{TXred}{rgb}{0.890,0.000,0.000} % red txt
+\definecolor{TXyel}{rgb}{0.890,0.890,0.000} % yel txt
+\definecolor{TXgre}{rgb}{0.000,0.890,0.000} % gre txt
+\definecolor{TXcya}{rgb}{0.000,1.000,1.000} % cya txt
+\definecolor{TXblu}{rgb}{0.150,0.150,1.000} % blu txt
+\definecolor{TXmag}{rgb}{1.000,0.000,0.500} % mag txt
 
 \definecolor{TXgry}{rgb}{0.500,0.500,0.500} % gry txt  --- gray
 
@@ -37,19 +37,20 @@
     % - The JuanLesPins theme uses primary to quaternary (bottom to top) top strips
     % - Boadilla, AnnArbor use primary-ternary right to left on a single bottom strip
     % - The Copenhagen theme uses PRIMARY and QUATERNARY only, right to left on top & bottom
-    \setbeamercolor*{palette primary}{bg=BScbg!25!BSdbg,fg=TXgry}       % rightmost top/bot strips
-    \setbeamercolor*{palette secondary}{bg=BScbg!50!BSdbg,fg=TXgry}     % lower middle strip
-    \setbeamercolor*{palette tertiary}{bg=BScbg!75!BSdbg,fg=TXgry}      % leftmost top/bot strips
+    \setbeamercolor*{palette primary}{bg=BScbg!15!BSdbg,fg=TXgry}       % rightmost top/bot strips
+    \setbeamercolor*{palette secondary}{bg=BScbg!30!BSdbg,fg=TXgry}     % lower middle strip
+    \setbeamercolor*{palette tertiary}{bg=BScbg!45!BSdbg,fg=TXgry}      % leftmost top/bot strips
     \setbeamercolor*{palette quaternary}{bg=black,fg=white}             % ???
-    \setbeamercolor*{framesubtitle}{bg=black,fg=BScbg!50!TXgry}
+    \setbeamercolor*{title}{bg=BScbg!25!BSdbg,fg=BScbg!50!TXgry}
     \setbeamercolor*{subtitle}{bg=black,fg=BScbg!75!BSdbg}              % Subtitle
+    \setbeamercolor*{frametitle}{bg=BScbg!25!BSdbg}
     \setbeamercolor*{block title}{parent=structure}
     \setbeamercolor*{block title alerted}{parent=alerted text}
     \setbeamercolor*{block title example}{parent=example text}
     \setbeamercolor*{block body}{}
     \setbeamercolor*{block body alerted}{}
     \setbeamercolor*{block body example}{}
-    \setbeamercolor*{titlelike}{parent=structure,bg=BScbg!25!BSdbg}     % Title box
+    \setbeamercolor*{titlelike}{bg=BScbg!25!BSdbg}     % Title box if title undefined
 }
 
 %-----------------------------------------------------------------------------------------------
