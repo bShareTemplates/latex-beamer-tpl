@@ -22,7 +22,7 @@
 \definecolor{TXyel}{rgb}{0.750,0.750,0.000} % yel txt  --- 060°
 \definecolor{TXgre}{rgb}{0.000,0.750,0.000} % gre txt  --- 120°
 \definecolor{TXcya}{rgb}{0.000,0.750,0.750} % cya txt  --- 180°
-\definecolor{TXblu}{rgb}{0.000,0.000,0.750} % blu txt  --- 240°
+\definecolor{TXblu}{rgb}{0.200,0.200,0.750} % blu txt  --- 240°
 \definecolor{TXmag}{rgb}{0.750,0.000,0.750} % mag txt  --- 300°
 
 \definecolor{TXgry}{rgb}{0.500,0.500,0.500} % gry txt  --- gray
@@ -37,12 +37,12 @@
     % - The JuanLesPins theme uses primary to quaternary (bottom to top) top strips
     % - Boadilla, AnnArbor use primary-ternary right to left on a single bottom strip
     % - The Copenhagen theme uses PRIMARY and QUATERNARY only, right to left on top & bottom
-    \setbeamercolor*{palette primary}{bg=TXred!50!BSdbg,fg=BScbg}   % top+bot right strips
-    \setbeamercolor*{palette secondary}{bg=black,fg=white}          % ???
-    \setbeamercolor*{palette tertiary}{bg=BScbg,fg=TXgry}           % top+bot leftmost strip (out of 3)
-    \setbeamercolor*{palette quaternary}{bg=BScpg,fg=TXgry}         % top+bot left strips
-    \setbeamercolor*{framesubtitle}{fg=BScbg!50!TXgry}
-    \setbeamercolor*{subtitle}{fg=BScbg!50!TXgry}                   % Subtitle
+    \setbeamercolor*{palette primary}{bg=BScbg!25!BSdbg,fg=TXgry}       % rightmost top/bot strips
+    \setbeamercolor*{palette secondary}{bg=BScbg!50!BSdbg,fg=TXgry}     % lower middle strip
+    \setbeamercolor*{palette tertiary}{bg=BScbg!75!BSdbg,fg=TXgry}      % leftmost top/bot strips
+    \setbeamercolor*{palette quaternary}{bg=BScpg,fg=TXgry!75!white}    % top+bot left strips
+    \setbeamercolor*{framesubtitle}{bg=black,fg=BScbg!50!TXgry}
+    \setbeamercolor*{subtitle}{bg=black,fg=BScbg!50!TXgry}              % Subtitle
     \setbeamercolor*{block title}{parent=structure}
     \setbeamercolor*{block title alerted}{parent=alerted text}
     \setbeamercolor*{block title example}{parent=example text}
