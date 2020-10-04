@@ -10,7 +10,13 @@
     }%
 }
 
-\newcommand{\ver}[1]{\raisebox{0.75ex}{\pmb{\textbf{\textcolor{white}{#1}}}}}
+\newcommand{\ver}[1]{%
+    \raisebox{0.75ex}{%
+        \scalebox{1.1}{%
+            \pmb{\textbf{\textcolor{TXgry!50!white}{#1}}}%
+        }%
+    }%
+}
 
 \newcommand{\RED}[1]{{\textcolor{TXred}{#1}}}
 \newcommand{\YEL}[1]{{\textcolor{TXyel}{#1}}}
