@@ -1,6 +1,8 @@
-\documentclass[aspectratio=169]{beamer}
+%-----------------------------------------------------------------------------------------------
+\documentclass[12pt,aspectratio=169]{beamer}
+%-----------------------------------------------------------------------------------------------
 \usepackage{pslatex}
-
+%-----------------------------------------------------------------------------------------------
 \newcommand{\YA}{%
     \mbox{%
         Y\makebox[0pt][l]{\hspace{-0.178em}\raisebox{-0.00ex}{\scalebox{0.30}{E}}}%
@@ -9,7 +11,7 @@
         H%
     }%
 }
-
+%-----------------------------------------------------------------------------------------------
 \newcommand{\ver}[1]{%
     \raisebox{0.75ex}{%
         \scalebox{1.1}{%
@@ -17,40 +19,39 @@
         }%
     }%
 }
-
+%-----------------------------------------------------------------------------------------------
 \newcommand{\RED}[1]{{\textcolor{TXred}{#1}}}
 \newcommand{\YEL}[1]{{\textcolor{TXyel}{#1}}}
 \newcommand{\GRE}[1]{{\textcolor{TXgre}{#1}}}
 \newcommand{\CYA}[1]{{\textcolor{TXcya}{#1}}}
 \newcommand{\BLU}[1]{{\textcolor{TXblu}{#1}}}
 \newcommand{\MAG}[1]{{\textcolor{TXmag}{#1}}}
-
+%-----------------------------------------------------------------------------------------------
 \usetheme{CambridgeUS}
 \usefonttheme{serif}
 \usecolortheme{BShare1}
-
+%-----------------------------------------------------------------------------------------------
 \title{Theme Testing}
 \subtitle{A Colorful Saga}
 \author{Bíblia Share}
 %\institute{Bíblia Share}
-    \date{\space}%
-%\date{{\scriptsize\today}}
-
+\date{\space}%
+%-----------------------------------------------------------------------------------------------
 \begin{document}
-
+%-----------------------------------------------------------------------------------------------
     \begin{frame}
         \titlepage
     \end{frame}
-
+%-----------------------------------------------------------------------------------------------
     \section{Introduction}
-
+%-----------------------------------------------------------------------------------------------
     \section{Base Verse}
-
+%-----------------------------------------------------------------------------------------------
     \subsection{Plain}
 
     \begin{frame}{Isaiah 2:2,3 (KJV)}{The establishment of the mountain of the house of \YA}
         %-----
-        \linespread{1.25}\Large
+        \linespread{1.25}
         %-----
         \ver{2}~And it shall come to pass in the last days, that  the  mountain  of  the  Lord's
         house shall be established in the top of the mountains, and shall be exalted  above  the
@@ -62,11 +63,12 @@
         from Jerusalem.
     \end{frame}
 
+%-----------------------------------------------------------------------------------------------
     \subsection{Highlighted}
 
     \begin{frame}{Isaiah 2:2,3 (KJV)}{The establishment of the mountain of the house of \YA}
         %-----
-        \linespread{1.25}\Large
+        \linespread{1.25}
         %-----
         \ver{2}~And \RED{it shall come to pass} in the last  days,  that  the  mountain  of  the
         Lord's house shall be \YEL{established} in the \CYA{top of the mountains}, and shall  be
@@ -78,4 +80,6 @@
         the \YEL{law,} and the word of the Lord \YEL{from Jerusalem}.
     \end{frame}
 
+%-----------------------------------------------------------------------------------------------
 \end{document}
+%-----------------------------------------------------------------------------------------------
