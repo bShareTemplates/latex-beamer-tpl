@@ -25,8 +25,14 @@
 \definecolor{TXblu}{rgb}{0.000,0.000,0.500} % blu txt  --- 240°
 \definecolor{TXmag}{rgb}{0.500,0.000,0.500} % mag txt  --- 300°
 
+\definecolor{TXgry}{rgb}{0.500,0.500,0.500} % gry txt  --- gray
+
 %-----------------------------------------------------------------------------------------------
 \mode<presentation>{
+    \setbeamercolor{normal text}{fg=TXgry,bg=BSdbg}                 % Slide background
+    \setbeamercolor{structure}{fg=BScbg}                            % Title + Controls
+    \setbeamercolor{alerted text}{fg=TXyel}                         % \alert{} contents
+    \setbeamercolor{item projected}{use=item,fg=white,bg=item.fg!50}% ???
 }
 
 %-----------------------------------------------------------------------------------------------
