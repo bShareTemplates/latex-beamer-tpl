@@ -29,10 +29,10 @@
 
 %-----------------------------------------------------------------------------------------------
 \mode<presentation>{
-    \setbeamercolor{normal text}{fg=TXgry,bg=BSdbg}                 % Slide background
-    \setbeamercolor{structure}{fg=BScbg}                            % Title + Controls
-    \setbeamercolor{alerted text}{fg=TXyel}                         % \alert{} contents
-    \setbeamercolor{item projected}{use=item,fg=white,bg=item.fg!50}% ???
+    \setbeamercolor*{normal text}{fg=TXgry,bg=BSdbg}                % Slide background
+    \setbeamercolor*{structure}{fg=BScbg}                           % Title + Controls
+    \setbeamercolor*{alerted text}{fg=TXyel}                        % \alert{} contents
+    \setbeamercolor*{item projected}{use=item,fg=white,bg=item.fg!50}   % ???
     % Meanings of primary...quaternary are theme-dependent:
     % - The JuanLesPins theme uses primary to quaternary (bottom to top) top strips
     % - Boadilla, AnnArbor use primary-ternary right to left on a single bottom strip
@@ -41,6 +41,15 @@
     \setbeamercolor*{palette secondary}{bg=black,fg=white}          % ???
     \setbeamercolor*{palette tertiary}{bg=BScbg,fg=TXgry}           % top+bot leftmost strip (out of 3)
     \setbeamercolor*{palette quaternary}{bg=BScpg,fg=TXgry}         % top+bot left strips
+    \setbeamercolor*{framesubtitle}{fg=BScbg!50!TXgry}
+    \setbeamercolor*{subtitle}{fg=BScbg!50!TXgry}                   % Subtitle
+    \setbeamercolor*{block title}{parent=structure}
+    \setbeamercolor*{block title alerted}{parent=alerted text}
+    \setbeamercolor*{block title example}{parent=example text}
+    \setbeamercolor*{block body}{}
+    \setbeamercolor*{block body alerted}{}
+    \setbeamercolor*{block body example}{}
+    \setbeamercolor*{titlelike}{parent=structure}
 }
 
 %-----------------------------------------------------------------------------------------------
