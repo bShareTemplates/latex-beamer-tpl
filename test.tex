@@ -42,9 +42,22 @@
 \subtitle{A Colorful Saga}
 \author{Bíblia Share}
 %\institute{Bíblia Share}
-\date{\space}%
+\date[\today]{{\scriptsize\tt%
+    \includegraphics[height=6.0mm]{res/cc/by-nc-nd-88x31.pdf}\\[\smallskipamount]
+    https://github.com/bibliashare
+}}
 %-----------------------------------------------------------------------------------------------
 \begin{document}
+%-----------------------------------------------------------------------------------------------
+\logo{%
+    \parbox{158mm}{% There's a 1mm gap on each side of the 160mm x 90mm slide logo line
+    \mode<beamer>{%
+        \hfill\includegraphics[height=9.0mm]{res/logo/BibliaShare.pdf}%
+    }
+    \mode<handout>{%
+        \hfill\includegraphics[height=9.0mm]{res/logo/BibliaShare.pdf}%
+    }
+}}
 %-----------------------------------------------------------------------------------------------
     \begin{frame}
         \titlepage
