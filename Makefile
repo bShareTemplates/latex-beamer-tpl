@@ -10,6 +10,18 @@ clean:
 wipe: clean
 	rm -vf fig/*pdf
 
+res/cc/%.svg: res/cc/%.url
+	wget \
+		--input-file=$< \
+		--output-document=$@
+	touch $@
+
+res/cc/%.pdf: res/cc/%.svg
+	inkscape \
+		--export-type=pdf \
+		--export-filename=$@ \
+		$<
+
 res/logo/%.pdf: res/logo/%.svg
 	inkscape \
 		--export-type=pdf \
